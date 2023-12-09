@@ -7,5 +7,13 @@ class Program
     {
         Console.WriteLine("Enter the file path:");
         string filePath = Console.ReadLine();
+
+        if (File.Exists(filePath))
+        {
+        }
+        else
+        {
+            Console.WriteLine("File does not exist.");
+        }
     }
 }
